@@ -1,0 +1,26 @@
+.main-hero
+  min-height: 80vh
+  background-color: $black
+  background-image: linear-gradient( rgba($black, 0.5), rgba($green, 0.8) 120% ), url('../img/hero.jpg')
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  position: relative
+
+  .container
+    min-height: 80vh
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    text-align: center
+
+  h1
+    font-size: ms(7)
+    margin-bottom: ms(1)
+
+
+  .down
+    +size( ms(2)  )
+    margin-top: ms(2)
+    animation: bounce 1s infinite
