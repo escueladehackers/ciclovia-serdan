@@ -1,3 +1,12 @@
 mixin svg(name)
   svg.icon(class=name)
     use(xlink:href=`#${name}`)
+
+mixin instagram-media(media)
+  - media = media || "default_media.jpg"
+  .media-element
+    img(src= "img/" + media )
+    .overlay
+      p Este es mi texto de instagram instagram instagram instagram instagram instagram instagram
+        a(href="#", target="_blank")
+          +svg('instagram')
